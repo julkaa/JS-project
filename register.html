@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Laba 7</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://www.flaticon.com/premium-icon/icons/svg/3280/3280306.svg">
+</head>
+
+<body>
+    <header>
+        <a class="logo">Navbar</a>
+        <nav>
+            <ul id="topmenu">
+                <li><a class='submenu-link'>Головна</a>
+
+                    <ul class="submenu">
+                        <li><a>головна 1</a></li>
+                        <li><a>головна 2</a></li>
+                        <li><a class="submenu-link_2">головна 3</a>
+
+                            <ul class="submenu_2">
+                                <li><a href="index.html">повернутися</a>
+                                </li>
+                                <li><a>1</a></li>
+                                <li><a>2</a></li>
+                                <li><a>3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <li><a class='submenu-link'>Обрахунки</a>
+                    <ul class="submenu">
+                        <li><a>обрахунки 1</a></li>
+                        <li><a class="submenu-link_2">обрахунки 2</a>
+
+                            <ul class="submenu_2 links">
+                                <li><a href="calc.html">калькулятор</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <li><a class='submenu-link'>Пустий</a>
+                    <ul class="submenu">
+                        <li><a>пустий 1</a></li>
+                        <li><a class="submenu-link_2">пустий 2</a>
+
+                            <ul class="submenu_2 links">
+                                <li><a href="register.html">реєтрація</a></li>
+                                <li><a href="gallery.html">галерея</a></li>
+                                <li><a href="content.html">контент</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="registerDiv">
+        <h1 class="name">Register</h1>
+        <form name='form'>
+            <label>Surname:
+                <input type="text" name="lastName" id="surname">
+                <p class="err"></p>
+            </label>
+            <label>Name:
+                <input type="text" name="firstName" id="name">
+                <p class="err"></p>
+            </label>
+            <label>Date:
+                <input type="text" name='date' id='date'>
+                <p class="err"></p>
+            </label>
+            <label>Email:
+                <input type="email" name="email" id="email">
+                <p class="err"></p>
+            </label>
+            <label>Languages(ctrl-click to select multiple lines)
+                <select multiple name="languages" id="languages">
+                    <option>JavaScript</option>
+                    <option>HTML</option>
+                    <option>CSCC</option>
+                    <option>Python</option>
+                    <option>C++</option>
+                    <option>C#</option>
+                    <option>MySQL</option>
+                </select>
+                <p class="err"></p>
+            </label>
+            <label>Photo:
+                <input type="file" name='photo' id="photo">
+                <p class="err"></p>
+            </label>
+            <label>Interests:
+                <textarea name="interests" id="interests"></textarea>
+                <p class="err"></p>
+            </label>
+            <label>Password:
+                <input type="password" name='passw' id="passw">
+                <p class="err"></p>
+            </label>
+            <label>Confirm password:
+                <input type="password" name='passw2' id="passw2">
+                <p class="err"></p>
+            </label>
+
+        </form>
+        <input type="button" value="validate" id="validateBtn">
+    </div>
+
+    <div class="finalReg">
+        <label>Surname:
+            <span class="ansSurname"></span>
+        </label>
+        <br>
+        <label>Name:
+            <span class="ansName"></span>
+        </label>
+        <br>
+        <label>Date:
+            <span class="ansDate"></span>
+        </label>
+        <br>
+        <label>Email:
+            <span class="ansEmail"></span>
+        </label>
+        <br>
+        <label>Languages:
+            <br>
+            <span class="ansLanguages"></span>
+        </label>
+
+        <label>Photo:
+            <br>
+            <img class="ansPhoto">
+
+        </label>
+        <br>
+        <label>Interests
+            <span class=" ansInterests"></span>
+        </label>
+    </div>
+    <footer class="footer" style='margin-top: 60px'>
+        <span>Designed by Julia Kozak</span>
+    </footer>
+    <script src="script.js"></script>
+    <script src="register.js"></script>
+    <script src="menu.js"></script>
+</body>
+
+</html>

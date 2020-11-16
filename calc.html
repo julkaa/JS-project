@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Laba 7</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://www.flaticon.com/premium-icon/icons/svg/3280/3280306.svg">
+</head>
+
+<body>
+    <header>
+        <a class="logo">Navbar</a>
+        <nav>
+            <ul id="topmenu">
+                <li><a class='submenu-link'>Головна</a>
+
+                    <ul class="submenu">
+                        <li><a>головна 1</a></li>
+                        <li><a>головна 2</a></li>
+                        <li><a class="submenu-link_2">головна 3</a>
+
+                            <ul class="submenu_2">
+                                <li><a href="index.html">повернутися</a>
+                                </li>
+                                <li><a>1</a></li>
+                                <li><a>2</a></li>
+                                <li><a>3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <li><a class='submenu-link'>Обрахунки</a>
+                    <ul class="submenu">
+                        <li><a>обрахунки 1</a></li>
+                        <li><a class="submenu-link_2">обрахунки 2</a>
+
+                            <ul class="submenu_2 links">
+                                <li><a href="calc.html">калькулятор</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <li><a class='submenu-link'>Пустий</a>
+                    <ul class="submenu">
+                        <li><a>пустий 1</a></li>
+                        <li><a class="submenu-link_2">пустий 2</a>
+
+                            <ul class="submenu_2 links">
+                                <li><a href="register.html">реєтрація</a></li>
+                                <li><a href="gallery.html">галерея</a></li>
+                                <li><a href="content.html">контент</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="calc">
+        <h1>Калькулятор</h1>
+        <form>
+            <p>Дані: <input type="text" class="mainInput" placeholder='введіть число' value=""></p>
+            <br>
+            <div class="btns">
+                <input type="button" value='+' class='actionBtn'>
+                <input type="button" value='-' class='actionBtn'>
+                <input type="button" value='*' class='actionBtn'>
+                <input type="button" value='/' class='actionBtn'>
+            </div>
+            <br>
+            <input type="button" value="очистити" class="resetBtn">
+            <p>Результат: <output name='result'></output></p>
+        </form>
+    </div>
+    <footer class="footer" style="margin-top: 333px">
+        <span>Designed by Julia Kozak</span>
+    </footer>
+    <script src="script.js"></script>
+    <script src="menu.js"></script>
+</body></html>

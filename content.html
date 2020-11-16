@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Laba 7</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://www.flaticon.com/premium-icon/icons/svg/3280/3280306.svg">
+    <link rel="stylesheet" href="jquery-ui.css">
+
+</head>
+
+<body>
+    <header>
+        <a class="logo">Navbar</a>
+        <nav>
+            <ul id="topmenu">
+                <li><a class='submenu-link'>Головна</a>
+
+                    <ul class="submenu">
+                        <li><a>головна 1</a></li>
+                        <li><a>головна 2</a></li>
+                        <li><a class="submenu-link_2">головна 3</a>
+
+                            <ul class="submenu_2">
+                                <li><a href="index.html">повернутися</a>
+                                </li>
+                                <li><a>1</a></li>
+                                <li><a>2</a></li>
+                                <li><a>3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <li><a class='submenu-link'>Обрахунки</a>
+                    <ul class="submenu">
+                        <li><a>обрахунки 1</a></li>
+                        <li><a class="submenu-link_2">обрахунки 2</a>
+
+                            <ul class="submenu_2 links">
+                                <li><a href="calc.html">калькулятор</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <li><a class='submenu-link'>Пустий</a>
+                    <ul class="submenu">
+                        <li><a>пустий 1</a></li>
+                        <li><a class="submenu-link_2">пустий 2</a>
+
+                            <ul class="submenu_2 links">
+                                <li><a href="register.html">реєтрація</a></li>
+                                <li><a href="gallery.html">галерея</a></li>
+                                <li><a href="content.html">контент</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+        <div class="textDiv" style="clear: both">
+            <div id="test">
+                <p class="firstText">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed doloremque ipsam perferendis expedita a ducimus dicta eius ullam dolore deserunt praesentium quos exercitationem cum impedit, illum tenetur totam. Iure libero, tempora, ad facere nulla repellendus dolor?</p>
+            </div>
+            <button onclick="mySlideToggle()">ефект slideToggle()</button>
+            <button onclick="boldText()">ефект myBoldText</button>
+            <button onclick="changeColor()">ефект changeColor</button>
+        </div>
+
+        <div class="increasingDiv">
+            <div class="animatedDiv1"></div>
+            <button onclick="addAnimate1()">eфект Animate()</button>
+        </div>
+
+        <div class="movingDiv">
+            <div class="animatedDiv2"></div>
+            <button onclick="addAnimate2()">eфект Animate()</button>
+        </div>
+
+        <div class="disappearDiv">
+            <div class="animatedDiv3"></div>
+            <button onclick="addAnimate3()">eфект Opacity()</button>
+        </div>
+        <div class="tableDiv">
+            <table>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>hello</td>
+                    <td>hello</td>
+                </tr>
+            </table>
+            <button onclick="ChangeColor2()">eфект ChangeColor2()</button>
+        </div>
+
+        <div class='formDiv'>
+            <p style="text-align: center">Write a,b,c,d,e</p>
+            <form id='form_tags'>
+                <label for="autocomplete">Autocomplete:</label>
+                <input id="autocomplete" title="type a,b,c,d,e" autocomplete="off">
+            </form>
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        <span>Designed by Julia Kozak</span>
+    </footer>
+    <script src="jquery.js"></script>
+    <script src="jquery-ui.js"></script>
+    <script src="menu.js"></script>
+    <script src="content.js"></script>
+
+</body></html>
